@@ -1,13 +1,2 @@
-{
-  "name": "bigchat-signal-server",
-  "version": "1.0.0",
-  "description": "Simple WebRTC signaling server for BigChat using Node.js and Socket.IO",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.19.2",
-    "socket.io": "^4.7.2"
-  }
-}
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => console.log(`Signaling server running on port ${PORT}`));
